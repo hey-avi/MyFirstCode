@@ -3,14 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Code</title>
+  <meta name="description" content="Avinash — B.Tech student & developer. Portfolio showcasing projects, skills and journey." />
+  <title>Avinash — Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="hero">
-    <h1>My First Code</h1>
-    <p>A clean, professional starting point for your coding journey.</p>
-    <a class="cta" href="#" aria-label="Get started">Get Started</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Avinash</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact" class="accent">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Hi, I'm Avinash</h1>
+          <p class="lead">B.Tech student, passionate full-stack developer building thoughtful web experiences. I design, code, and ship products that solve real problems.</p>
+          <div class="cta-row">
+            <a href="#projects" class="btn btn-primary">See Projects</a>
+            <a href="#contact" class="btn btn-outline">Hire / Collaborate</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <svg class="avatar" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avinash avatar">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#3b82f6"/>
+              </linearGradient>
+            </defs>
+            <rect width="120" height="120" rx="18" fill="url(#g)" />
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" fill="#fff">A</text>
+          </svg>
+          <div class="hero-meta">
+            <div>
+              <strong>Degree</strong>
+              <span>B.Tech (in progress)</span>
+            </div>
+            <div>
+              <strong>Focus</strong>
+              <span>Full‑stack Web Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>I began exploring programming during my first year of engineering. Since then I've worked on web apps, automation scripts, and open-source contributions. I enjoy building clean UIs, performant backends, and learning new technologies.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Selected Projects</h2>
+      <div class="grid projects-grid">
+        <article class="card">
+          <h3>SmartNotes</h3>
+          <p>Note-taking web app with tagging, search and Markdown support. Built with React and Node.js.</p>
+          <div class="meta">Tech: React • Node • MongoDB</div>
+        </article>
+        <article class="card">
+          <h3>EduPortal</h3>
+          <p>College portal prototype for course management and notifications. Focused on UX and accessibility.</p>
+          <div class="meta">Tech: Vue • Firebase</div>
+        </article>
+        <article class="card">
+          <h3>AlgoVisualizer</h3>
+          <p>Interactive visualization of algorithms and data structures with animations and step controls.</p>
+          <div class="meta">Tech: TypeScript • D3</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill"><span>JavaScript</span><progress value="85" max="100"></progress></div>
+        <div class="skill"><span>TypeScript</span><progress value="75" max="100"></progress></div>
+        <div class="skill"><span>React</span><progress value="80" max="100"></progress></div>
+        <div class="skill"><span>Node.js</span><progress value="70" max="100"></progress></div>
+      </div>
+    </section>
+
+    <section id="journey" class="container journey">
+      <h2>Developer Journey</h2>
+      <ol class="timeline">
+        <li><strong>2022</strong> — Started B.Tech, learned basics of C and web fundamentals.</li>
+        <li><strong>2023</strong> — Built first full-stack project and contributed to open-source.</li>
+        <li><strong>2024</strong> — Focused on JavaScript, React and backend services.</li>
+        <li><strong>Now</strong> — Seeking internships and collaborations to level up.</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>I'm open to internships, mentorships, and project collaborations.</p>
+      <a class="btn btn-primary" href="mailto:avinash@example.com?subject=Opportunity%20to%20collaborate">Email Me</a>
+      <p class="muted">Or find me on GitHub and LinkedIn.</p>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">© Avinash — Built with care • <a href="#">Privacy</a></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
